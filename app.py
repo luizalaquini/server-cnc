@@ -1,6 +1,6 @@
 import socketio
 import eventlet
-from ttgLib.TextToGcode import ttg
+from TextToGcode import ttg
 
 # Conversão do texto para Gcode:
 fontScale = 0.5
