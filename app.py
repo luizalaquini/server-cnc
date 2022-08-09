@@ -75,7 +75,7 @@ app = socketio.WSGIApp(sio, static_files={
 })
 
 @sio.event
-def connect(sid):
+def connect(sid, environ, auth):
     print('---------------------------connect ', sid)
 
 @sio.event
