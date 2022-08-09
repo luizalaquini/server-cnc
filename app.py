@@ -1,6 +1,6 @@
 import socketio
 import eventlet
-from TextToGcode import ttg
+from ttgLib.TextToGcode import ttg
 
 # Conversão do texto para Gcode:
 fontScale = 0.5
@@ -17,6 +17,15 @@ offsetList = [
     (90, 16),
     (41, 7)
 ]
+configs = [
+    '$100=629.921', '$101=629.921', '$102=629.921', 
+    '$110=420', '$111=420', '$112=420', 
+    '$5=0', '$21=1', '$22=1', '$23=7', 
+    '$120=40', '$121=40', '$122=40'
+    ]
+homing = ['$H', 'G92 X0 Y0 Z0']
+zUP = 'G1 Z40'
+zDown = 'G1 Z46'
 
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
     for i, command in enumerate(gcodeAbsolute):
@@ -43,29 +52,30 @@ def createFormsGcode(form, cuttingSpeed, fontSize):
     for i, entry in enumerate(form):
         if i == 0:
             path = ttg(entry, fontSize, 0, "return", cuttingSpeed).toGcode(
-                "G1 Z0.5", "G1 Z5", "G0", "G1")
+                zDown, zUP, "G0", "G1")
             offsetGcode(path, offsetList[i][0], offsetList[i][1])
-            finalGcode = path[:3] + ["G1 Z5"] + path[3:]
+            finalGcode = path[:3] + [zUP] + path[3:]
         else:
             path = ttg(entry, fontSize, 0, "return", cuttingSpeed).toGcode(
-                "G1 Z0.5", "G1 Z5", "G0", "G1")
+                zDown, zUP, "G0", "G1")
             # Remove the first three lines
             path = path[3:]
             offsetGcode(path, offsetList[i][0], offsetList[i][1])
             finalGcode += path
     finalGcode[0] = 'G1 F200' 
+    finalGcode = configs + homing + finalGcode
     return finalGcode
 
 
 # Server
-sio = socketio.Server(cors_allowed_origins="*")
+sio = socketio.Server(cors_allowed_origins="*", )
 app = socketio.WSGIApp(sio, static_files={
     '/': {'content_type': 'text/html', 'filename': 'index.html'},
     '/css/style.css': 'css/style.css'
 })
 
 @sio.event
-def connect(sid, environ, auth):
+def connect(sid):
     print('---------------------------connect ', sid)
 
 @sio.event
