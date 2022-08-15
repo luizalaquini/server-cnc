@@ -5,17 +5,17 @@ from ttgLib.TextToGcode import ttg
 # Conversão do texto para Gcode:
 fontScale = 0.5
 offsetList = [
-    (93, 79),
-    (88, 70),
-    (28, 70),
-    (83, 61),
-    (71, 61),
-    (18, 61),
-    (77, 53),
-    (47, 53),
-    (81, 45),
-    (28, 45),
-    (77, 36)
+    (30, 85), # MODELO
+    (35, 77), # NUM SERIE
+    (97, 77), # CAP DE CARGA
+    (41, 69), # DATA DE FAB MES
+    (54, 69), # DATA DE FAB ANO
+    (106, 69), # CLASSE DE UTIL
+    (48, 60), # ESTADO DE CARGA
+    (77, 60), # PESO 
+    (43, 52), # POT INSTALADA
+    (97, 52), # VOLTAGEM
+    (48, 43)  # N CREA
 ]
 configs = [
     '$100=629.921', '$101=629.921', '$102=629.921', 
@@ -25,7 +25,7 @@ configs = [
     ]
 homing = ['$H', 'G92 X0 Y0 Z0']
 zUP = 'G1 Z15'
-zDown = 'G1 Z22'
+zDown = 'G1 Z23'
 
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
     for i, command in enumerate(gcodeAbsolute):
