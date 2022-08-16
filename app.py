@@ -63,7 +63,7 @@ def createFormsGcode(form, cuttingSpeed, fontSize):
             offsetGcode(path, offsetList[i][0], offsetList[i][1])
             finalGcode += path
     finalGcode[0] = 'G1 F400' 
-    finalGcode = homing + configs + finalGcode
+    finalGcode = homing + configs + finalGcode + homing
     return finalGcode
 
 
