@@ -25,7 +25,7 @@ configs = [
     ]
 homing = ['$H', 'G92 X0 Y0 Z0']
 zUP = 'G1 Z15'
-zDown = 'G1 Z23'
+zDown = 'G1 Z24'
 
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
     for i, command in enumerate(gcodeAbsolute):
@@ -52,7 +52,7 @@ def createFormsGcode(form, cuttingSpeed, fontSize):
     for i, entry in enumerate(form):
         if i == 0:
             path = ttg(entry, fontSize, 0, "return", cuttingSpeed).toGcode(
-                zDown, zUP, "G0 F500", "G1")
+                zDown, zUP, "G0", "G1")
             offsetGcode(path, offsetList[i][0], offsetList[i][1])
             finalGcode = path[:3] + [zUP] + path[3:]
         else:
@@ -62,7 +62,7 @@ def createFormsGcode(form, cuttingSpeed, fontSize):
             path = path[3:]
             offsetGcode(path, offsetList[i][0], offsetList[i][1])
             finalGcode += path
-    finalGcode[0] = 'G1 F200' 
+    finalGcode[0] = 'G1 F400' 
     finalGcode = homing + configs + finalGcode
     return finalGcode
 
