@@ -24,4 +24,4 @@ With the converted strings, we create a code ( function offsetGcode() ) that rec
 ### Developers
 - Luiza Batista Laquini (LinkedIn: https://www.linkedin.com/in/luizalaquini/)
 - Guilherme Goes Zanetti (LinkedIn: https://www.linkedin.com/in/guilherme-goes-zanetti-0429631a2/)
-- Joana Venturin Loureiro (LinkedIn https://www.linkedin.com/in/joana-venturin-loureiro/)
+- Joana Venturin Loureiro (LinkedIn: https://www.linkedin.com/in/joana-venturin-loureiro/)
