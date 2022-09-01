@@ -10,6 +10,9 @@ Running Page: https://server-cnc.herokuapp.com/
 ### Usage
 This server receives information (text) from a form, converts it to g-code and send it to esp8266 for usage at a CNC machine.
 
+### Technologies
+- Python
+
 ### Behavior
 When the server receives the 'data' event from the form, it transforms the array of strings received into G-Code, which are the final instructions to the CNC, and performs an emit through socketio of all commands to the esp8266.
 
