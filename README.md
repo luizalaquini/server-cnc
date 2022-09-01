@@ -12,6 +12,7 @@ This server receives information (text) from a form, converts it to g-code and s
 
 ### Technologies
 - Python
+- Socket.io
 
 ### Behavior
 When the server receives the 'data' event from the form, it transforms the array of strings received into G-Code, which are the final instructions to the CNC, and performs an emit through socketio of all commands to the esp8266.
