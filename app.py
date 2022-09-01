@@ -25,7 +25,7 @@ configs = [
     ]
 homing = ['$H', 'G92 X0 Y0 Z0']
 zUP = 'G1 F450 Z17'
-zDown = 'G1 F200 Z22.6'
+zDown = 'G1 F200 Z22.5'
 
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
     for i, command in enumerate(gcodeAbsolute):
@@ -65,7 +65,6 @@ def createFormsGcode(form, cuttingSpeed, fontSize):
     finalGcode[0] = 'G1 F400' 
     finalGcode = homing + configs + finalGcode + homing
     return finalGcode
-
 
 # Server
 sio = socketio.Server(cors_allowed_origins="*", )
