@@ -962,14 +962,14 @@ class ttg:
     def v(self):
 
         #   .               .
-        #   .               .
-        #   .               .
-        #   .               .
-        #   .               . this one is also
-        #   .               . interpolated as top left
-        #   .               . bottom middle top right
-        #   .               .
-        #       .       .
+        #                  
+        #                  
+        #                  
+        #                   this one is also
+        #                   interpolated as top left
+        #                   bottom middle top right
+        #                  
+        #              
         #           .
 
         xOff = self.currentXOffset
