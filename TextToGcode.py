@@ -1723,7 +1723,7 @@ class ttg:
 
             elif char == "-":
                 ttg.dash(self)
-                self.currentXOffset += 6
+                self.currentXOffset += 7
 
             elif char == ",":
                 ttg.comma(self)
