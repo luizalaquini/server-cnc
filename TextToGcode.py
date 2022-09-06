@@ -978,8 +978,8 @@ class ttg:
             (0 + xOff, 9),
             "on",
             "slow",
-            (2 + xOff, 0),
-            (4 + xOff, 9),
+            (4 + xOff, 0),
+            (4 + xOff, 8),
             "off",
             "fast",
         ]
@@ -1544,7 +1544,7 @@ class ttg:
         #                   
         #                   
         #                   
-        #     .            
+        #  .            
 
         xOff = self.currentXOffset
 
