@@ -1683,11 +1683,11 @@ class ttg:
 
             elif char == "1":
                 ttg.one(self)
-                self.currentXOffset += 3
+                self.currentXOffset += 4
 
             elif char == "2":
                 ttg.two(self)
-                self.currentXOffset += 7
+                self.currentXOffset += 6
 
             elif char == "3":
                 ttg.three(self)
@@ -1723,7 +1723,7 @@ class ttg:
 
             elif char == "-":
                 ttg.dash(self)
-                self.currentXOffset += 5
+                self.currentXOffset += 6
 
             elif char == ",":
                 ttg.comma(self)
