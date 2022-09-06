@@ -979,7 +979,7 @@ class ttg:
             "on",
             "slow",
             (4 + xOff, 0),
-            (4 + xOff, 8),
+            (8 + xOff, 9),
             "off",
             "fast",
         ]
