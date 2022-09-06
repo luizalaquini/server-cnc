@@ -24,7 +24,7 @@ configs = [
     '$120=40', '$121=40', '$122=40'
     ]
 homing = ['$H', 'G92 X0 Y0 Z0']
-zUP = 'G1 F450 Z29'
+zUP = 'G1 F450 Z28'
 zDown = 'G1 F200 Z32.6'
  
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
