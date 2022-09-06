@@ -1143,7 +1143,7 @@ class ttg:
             "on",
             "slow",
             (2 + xOff, 9),
-            (0 + xOff, 5)
+            (0 + xOff, 5),
             "off",
             "fast",
         ]
@@ -1533,7 +1533,7 @@ class ttg:
 
         ttg.appendPoints(self, points)
 
-     def dot(self):
+    def dot(self):
 
         #                
         #                    
@@ -1552,7 +1552,6 @@ class ttg:
             (1 + xOff, 0),
             "on",
             "slow",
-
         ]
 
         ttg.appendPoints(self, points)
