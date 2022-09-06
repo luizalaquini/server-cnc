@@ -203,7 +203,7 @@ class ttg:
 
     def whiteSpace(self):
         # whitespace function for spaces
-        self.currentXOffset += 4
+        self.currentXOffset += 2
 
     def a(self):
 
@@ -1126,10 +1126,10 @@ class ttg:
     def one(self):
 
         #           .
-        #           .
-        #           .
-        #           .
-        #           .
+        #         . .
+        #       .   .
+        #     .     .
+        #   .       .
         #           .
         #           .
         #           .
@@ -1143,6 +1143,7 @@ class ttg:
             "on",
             "slow",
             (2 + xOff, 9),
+            (0 + xOff, 5)
             "off",
             "fast",
         ]
@@ -1532,6 +1533,30 @@ class ttg:
 
         ttg.appendPoints(self, points)
 
+     def dot(self):
+
+        #                
+        #                    
+        #                    
+        #                    
+        #                    
+        #                    
+        #                   
+        #                   
+        #                   
+        #     .            
+
+        xOff = self.currentXOffset
+
+        points = [
+            (1 + xOff, 0),
+            "on",
+            "slow",
+
+        ]
+
+        ttg.appendPoints(self, points)
+
     # d88888b  .d88b.   .d88b.  d888888b d88888b d8888b.
     # 88'     .8P  Y8. .8P  Y8. `~~88~~' 88'     88  `8D
     # 88ooo   88    88 88    88    88    88ooooo 88oobY'
@@ -1706,6 +1731,10 @@ class ttg:
                 self.currentXOffset += 7
 
             elif char == "/":
+                ttg.slash(self)
+                self.currentXOffset += 7
+
+            elif char == ".":
                 ttg.slash(self)
                 self.currentXOffset += 7
 
