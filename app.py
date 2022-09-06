@@ -5,17 +5,17 @@ from TextToGcode import ttg
 # Conversão do texto para Gcode:
 fontScale = 0.5
 offsetList = [
-    (30, 91), # MODELO
-    (35, 83), # NUM SERIE
-    (97, 83), # CAP DE CARGA
-    (41, 75), # DATA DE FAB MES
-    (54, 75), # DATA DE FAB ANO
-    (106, 75), # CLASSE DE UTIL
-    (48, 66), # ESTADO DE CARGA
-    (77, 66), # PESO 
-    (42, 58), # POT INSTALADA
-    (97, 58), # VOLTAGEM
-    (48, 49)  # N CREA
+    (30, 79), # MODELO
+    (35, 71), # NUM SERIE
+    (97, 71), # CAP DE CARGA
+    (41, 63), # DATA DE FAB MES
+    (54, 63), # DATA DE FAB ANO
+    (106, 63), # CLASSE DE UTIL
+    (48, 54), # ESTADO DE CARGA
+    (77, 54), # PESO 
+    (42, 46), # POT INSTALADA
+    (97, 46), # VOLTAGEM
+    (48, 37)  # N CREA
 ]
 configs = [
     '$100=629.921', '$101=629.921', '$102=629.921', 
