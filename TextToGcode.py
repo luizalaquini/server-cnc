@@ -1726,11 +1726,11 @@ class ttg:
 
             elif char == "-":
                 ttg.dash(self)
-                self.currentXOffset += 7
+                self.currentXOffset += 5
 
             elif char == ",":
                 ttg.comma(self)
-                self.currentXOffset += 7
+                self.currentXOffset += 3
 
             elif char == "/":
                 ttg.slash(self)
@@ -1738,7 +1738,7 @@ class ttg:
 
             elif char == ".":
                 ttg.dot(self)
-                self.currentXOffset += 7
+                self.currentXOffset += 2
 
             else:
                 print("TextToGcode Error: Unsupported character ->", char)
