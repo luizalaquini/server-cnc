@@ -6,16 +6,16 @@ from TextToGcode import ttg
 fontScale = 0.5
 offsetList = [
     (30, 79), # MODELO
-    (35, 71), # NUM SERIE
-    (97, 71), # CAP DE CARGA
-    (41, 63), # DATA DE FAB MES
-    (54, 63), # DATA DE FAB ANO
-    (106, 63), # CLASSE DE UTIL
-    (48, 54), # ESTADO DE CARGA
-    (77, 54), # PESO 
-    (42, 46), # POT INSTALADA
-    (97, 46), # VOLTAGEM
-    (48, 37)  # N CREA
+    (35, 72), # NUM SERIE
+    (97, 72), # CAP DE CARGA
+    (41, 64), # DATA DE FAB MES
+    (54, 64), # DATA DE FAB ANO
+    (106, 64), # CLASSE DE UTIL
+    (48, 55), # ESTADO DE CARGA
+    (77, 55), # PESO 
+    (42, 47), # POT INSTALADA
+    (97, 47), # VOLTAGEM
+    (48, 38)  # N CREA
 ]
 configs = [
     '$100=629.921', '$101=629.921', '$102=629.921', 
@@ -25,7 +25,7 @@ configs = [
     ]
 homing = ['$H', 'G92 X0 Y0 Z0']
 zUP = 'G1 F450 Z28'
-zDown = 'G1 F200 Z32.55'
+zDown = 'G1 F200 Z32.5'
  
 def offsetGcode(gcodeAbsolute, offsetX, offsetY):
     for i, command in enumerate(gcodeAbsolute):
