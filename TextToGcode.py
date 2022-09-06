@@ -203,7 +203,7 @@ class ttg:
 
     def whiteSpace(self):
         # whitespace function for spaces
-        self.currentXOffset += 2
+        self.currentXOffset += 1
 
     def a(self):
 
@@ -1737,7 +1737,7 @@ class ttg:
                 self.currentXOffset += 7
 
             elif char == ".":
-                ttg.slash(self)
+                ttg.dot(self)
                 self.currentXOffset += 7
 
             else:
