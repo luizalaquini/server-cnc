@@ -15,7 +15,7 @@ offsetList = [
     (77, 55), # PESO 
     (42, 47), # POT INSTALADA
     (97, 47), # VOLTAGEM
-    (48, 38)  # N CREA
+    (50, 40)  # N CREA
 ]
 configs = [
     '$100=629.921', '$101=629.921', '$102=629.921', 
