@@ -978,8 +978,8 @@ class ttg:
             (0 + xOff, 9),
             "on",
             "slow",
-            (4 + xOff, 0),
-            (8 + xOff, 9),
+            (3 + xOff, 0),
+            (6 + xOff, 9),
             "off",
             "fast",
         ]
