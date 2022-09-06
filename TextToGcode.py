@@ -1683,7 +1683,7 @@ class ttg:
 
             elif char == "1":
                 ttg.one(self)
-                self.currentXOffset += 4
+                self.currentXOffset += 3
 
             elif char == "2":
                 ttg.two(self)
