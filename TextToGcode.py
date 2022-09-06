@@ -1549,9 +1549,12 @@ class ttg:
         xOff = self.currentXOffset
 
         points = [
-            (1 + xOff, 0),
+            (0 + xOff, 0),
             "on",
             "slow",
+            (1 + xOff, 0),
+            "off",
+            "fast",
         ]
 
         ttg.appendPoints(self, points)
