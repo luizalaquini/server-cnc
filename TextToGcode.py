@@ -1575,7 +1575,7 @@ class ttg:
         for char in self.text:
             if char == " ":
                 ttg.whiteSpace(self)
-                self.currentXOffset += 8
+                self.currentXOffset += 4
 
             elif char == "a" or char == "A":
                 ttg.a(self)
