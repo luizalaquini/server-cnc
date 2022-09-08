@@ -24,7 +24,7 @@ configs = [
     '$120=40', '$121=40', '$122=40'
 ]
 homing = ['$H', 'G92 X0 Y0 Z0']
-finalPosition = 'G1 F450 X5 Y5 Z5'
+finalPosition = ['G1 F450 X5 Y5 Z5']
 zUP = 'G1 F450 Z28'
 zDown = 'G1 F200 Z32.3'
  
