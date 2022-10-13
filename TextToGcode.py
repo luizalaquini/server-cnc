@@ -990,7 +990,7 @@ class ttg:
 
         # this is gonna be really weird unvisualized interpolation, sorry
         # youre gonna have to read tuples to understand the point to point movement
-        #   .       .       .       .
+        #   .         .         .       
         #
         #
         #
@@ -999,7 +999,7 @@ class ttg:
         #
         #
         #
-        #       .       .       .
+        #         .         .       
 
         xOff = self.currentXOffset
 
@@ -1007,12 +1007,10 @@ class ttg:
             (0 + xOff, 9),
             "on",
             "slow",
-            (1 + xOff, 0),
-            (2 + xOff, 9),
-            (3 + xOff, 0),
+            (2 + xOff, 0),
             (4 + xOff, 9),
-            (5 + xOff, 0),
-            (6 + xOff, 9),
+            (6 + xOff, 0),
+            (8 + xOff, 9),
             "off",
             "fast",
         ]
