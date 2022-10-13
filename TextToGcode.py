@@ -1665,7 +1665,7 @@ class ttg:
 
             elif char == "w" or char == "W":
                 ttg.w(self)
-                self.currentXOffset += 9
+                self.currentXOffset += 11
 
             elif char == "x" or char == "X":
                 ttg.x(self)
