@@ -1,5 +1,6 @@
 import socketio
 import eventlet
+import dnspython
 from TextToGcode import ttg
 
 # Conversão do texto para Gcode:
