@@ -5,7 +5,11 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/luizalaquini/server-cnc)
 ![GitHub followers](https://img.shields.io/github/followers/luizalaquini?label=follow&style=social)
 
-Running Page: https://server-cnc.herokuapp.com/
+Running Page:
+
+https://server-cnc.herokuapp.com/ (Not Working)
+
+https://server-75ps4q3vc-luizalaquini.vercel.app/
 
 ### Usage
 This server receives information (text) from a form, converts it to g-code and send it to esp8266 for usage at a CNC machine.
