@@ -9,8 +9,6 @@ Running Page:
 
 https://server-cnc.herokuapp.com/ (Not Working)
 
-https://server-75ps4q3vc-luizalaquini.vercel.app/
-
 ### Usage
 This server receives information (text) from a form, converts it to g-code and send it to esp8266 for usage at a CNC machine.
 
