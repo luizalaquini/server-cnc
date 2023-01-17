@@ -97,5 +97,6 @@ def my_message(sid, data):
 import os
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    #port = int(os.environ.get('PORT', 5000))
+    port = process.env.PORT
     eventlet.wsgi.server(eventlet.listen(('', port)), app)
